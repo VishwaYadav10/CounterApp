@@ -13,9 +13,11 @@ class App extends Component {
   //   console.log("App - Constructor");
   // }
 
-  // componentDidMount() {
-  //   console.log("App - Mounted");
-  // }
+
+  componentDidMount() {
+    document.title = "Counter App"
+  }
+
 
   handleIncrement = counter => {
     const counters = [...this.state.counters];
